@@ -6,7 +6,10 @@ const mySqlPool = require("./config/database");
 const cardRoute = require("./routes/cardRoute");
 const cors = require("cors");
 
-dotenv.config();
+dotenv.config({ path: `${__dirname}/config.env` });
+
+console.log(process.env.USER);
+console.log(typeof process.env.PASSWORD);
 server.use(cors());
 server.use(morgan("dev"));
 server.use(express.json());
