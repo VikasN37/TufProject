@@ -50,7 +50,7 @@ export function Quiz() {
 
       <Footer
         totalCards={totalCard}
-        currentCard={currentCard}
+        currentCard={currentCard === 0 ? -1 : currentCard}
         setCurrentCard={setCurrentCard}
       />
     </Grid>
