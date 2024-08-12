@@ -1,4 +1,4 @@
-import { Box, Grid, IconButton, Modal, Paper, Typography } from "@mui/material";
+import { Grid, IconButton, Modal, Paper, Typography } from "@mui/material";
 import { useStyles } from "./style";
 import { useState } from "react";
 import EditIcon from "@mui/icons-material/Edit";
