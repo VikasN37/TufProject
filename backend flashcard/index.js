@@ -20,7 +20,7 @@ mySqlPool
   .query("SELECT 1")
   .then(() => {
     console.log("SQL connected");
-    server.listen(process.env.PORT, () => {
+    server.listen(process.env.DB_PORT, () => {
       console.log(`server started at ${process.env.PORT}`);
     });
   })
